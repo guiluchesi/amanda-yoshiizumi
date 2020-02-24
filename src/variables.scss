@@ -1,0 +1,14 @@
+$primary-color: #662D91;
+$accent-color: #FBB040;
+$neutral-color: #F8F8F8;
+
+$primary-font: 'Muli', sans-serif;
+
+$screen-xs: 576px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+@mixin bg-icon($svg_base64) {
+  background-image: url("data:image/svg+xml;base64,#{$svg_base64}");
+}

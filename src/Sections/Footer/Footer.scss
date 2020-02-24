@@ -1,0 +1,95 @@
+@import 
+  '../../variables.scss',
+  '../../index.scss'
+;
+
+.main-footer {
+  padding: 30px 0 0;
+  background-image: url('../../Assets/img/pattern.svg');
+
+  .disclaimer {
+    background-color: $primary-color;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    position: relative;
+    z-index: 6;
+
+    a {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    .disclaimer {
+      margin-top: 115px;
+    }
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 100px 0 0;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #00000029;
+
+    input,
+    textarea {
+      width: 100%;
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid #000;
+      appearance: none;
+      box-shadow: none;
+      padding: 7px 10px;
+      margin-bottom: 10px;
+      @extend p;
+      color: #000;
+      text-align: left;
+    }
+  
+    .fields {
+      margin-top: 50px;
+      text-align: center;
+    }
+  
+    .feedback {
+      margin: 7px 0;
+      line-height: 1.6rem;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height .3s, opacity .3s;
+      will-change: max-height, opacity;
+      
+      &.shown {
+        max-height: 50px;
+        opacity: 1;
+      }
+  
+      a {
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+    
+    @media screen and (min-width: $screen-xs) {
+      margin: 0 auto;
+    }
+  
+    @media screen and (min-width: $screen-md) {
+      padding: 40px 40px 20px;
+  
+      button {
+        margin-bottom: 28px;
+      }
+    }
+  } 
+}

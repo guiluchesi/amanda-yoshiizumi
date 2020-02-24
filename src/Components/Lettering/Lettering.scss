@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.main-lettering {
+  padding: 20px 0;
+  font-weight: 800;
+  color: #000;
+  min-height: 150px;
+  position: relative;
+
+  .typed {
+    color: $primary-color;
+  }
+}

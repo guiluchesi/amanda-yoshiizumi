@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.main-header {
+  background-color: #EEEEEE;
+  padding-bottom: 300px;
+  position: relative;
+  overflow: hidden;
+
+  .scene {
+    position: absolute;
+    width: 130%;
+    top: -12%;
+    left: -20%;
+  }
+
+  .triangle-bg {
+    width: 130%;
+  }
+
+  .triangle-lines {
+    display: none;
+  }
+
+  @media (min-width: $screen-sm) {
+    .triangle-bg,
+    .triangle-lines {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding-bottom: 380px;
+
+    .main-lettering {
+      padding: 100px 0;
+    }
+  }
+
+  @media screen and (min-width: 1800px) {
+    .scene {
+      max-width: 2000px;
+      left: calc(50% - 1000px);
+    }
+  }
+}

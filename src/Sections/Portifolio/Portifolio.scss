@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.portifolio {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  position: relative;
+
+  @supports (display: grid) {
+    --columns: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(9, 350px);
+  }
+
+  @media (min-width: $screen-sm) {
+    --columns: 2;
+    grid-template-rows: repeat(5, 400px);
+  }
+
+  @media (min-width: $screen-lg) {
+    --columns: 3;
+    grid-template-rows: repeat(3, 400px);
+  }
+}

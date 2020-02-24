@@ -1,0 +1,131 @@
+@import
+  '../node_modules/reset-css/sass/reset',
+  'variables'
+;
+
+* {
+  box-sizing: border-box;
+
+  &:focus,
+  &:active {
+    outline-color: $primary-color;
+    outline-width: 3px;
+  }
+}
+
+body {
+  height: 100vh;
+  font-family: $primary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+h1, .h1 {
+  font-size: 1.9rem;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+}
+
+h3, .h3 {
+  font-size: 1.3rem;
+}
+
+h6, .h6 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #62676A;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+  margin-top: -280px;
+}
+
+.get-in-touch {
+  background-color: $accent-color;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+  z-index: 5;
+  box-shadow: 0 3px 6px #00000029;
+  background-size: 30px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  @include bg-icon('PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNMzEsNmMwLTAuMDUxNS0wLjAyMTgtMC4wOTU3LTAuMDI5My0wLjE0NTFjLTAuMDExLTAuMDc0MS0wLjAxNjQtMC4xNDc3LTAuMDQ0MS0wLjIxODQgICBjLTAuMDI4Mi0wLjA3MTgtMC4wNzQ4LTAuMTMwNS0wLjExOC0wLjE5MzFjLTAuMDI3Ny0wLjA0MDUtMC4wNDE0LTAuMDg3LTAuMDc1Ny0wLjEyNGMtMC4wMDQ1LTAuMDA0OC0wLjAxMDctMC4wMDYzLTAuMDE1My0wLjAxMSAgIGMtMC4wNTQ4LTAuMDU2OS0wLjEyNDEtMC4wOTQ2LTAuMTkxLTAuMTM3M2MtMC4wNDM4LTAuMDI3Ny0wLjA4MTUtMC4wNjYyLTAuMTI4Mi0wLjA4NjRjLTAuMDQzMi0wLjAxODgtMC4wOTMtMC4wMTk3LTAuMTM5LTAuMDMyMyAgIGMtMC4wODAzLTAuMDIxOC0wLjE1OTEtMC4wNDc0LTAuMjQxOS0wLjA0ODhDMzAuMDExMyw1LjAwMzQsMzAuMDA2Miw1LDMwLDVIMkMxLjk5MzUsNSwxLjk4ODEsNS4wMDM2LDEuOTgxNiw1LjAwMzcgICBDMS45MDM3LDUuMDA1MiwxLjgzLDUuMDMwMiwxLjc1NDMsNS4wNDk2Yy0wLjA1MTEsMC4wMTMzLTAuMTA2LDAuMDE1LTAuMTUzNywwLjAzNThDMS41NTczLDUuMTA0MiwxLjUyMjUsNS4xNDAzLDEuNDgxOCw1LjE2NTUgICBDMS40MTE2LDUuMjA5MiwxLjMzOTUsNS4yNDkxLDEuMjgyMyw1LjMwODRDMS4yNzc4LDUuMzEzLDEuMjcxNSw1LjMxNDYsMS4yNjcxLDUuMzE5M2MtMC4wMzQ0LDAuMDM3LTAuMDQ4LDAuMDgzNS0wLjA3NTcsMC4xMjQgICBDMS4xNDgxLDUuNTA2LDEuMTAxNiw1LjU2NDYsMS4wNzM0LDUuNjM2NUMxLjA0NTcsNS43MDcyLDEuMDQwMyw1Ljc4MDgsMS4wMjkzLDUuODU0OUMxLjAyMTgsNS45MDQzLDEsNS45NDg1LDEsNnYyMCAgIGMwLDAuMTMwMiwwLjAyNjYsMC4yNTk5LDAuMDc3MSwwLjM4MjFjMC4xMDEzLDAuMjQ0NywwLjI5NjIsMC40Mzk1LDAuNTQwOCwwLjU0MDhDMS43NDAyLDI2Ljk3MzQsMS44Njk4LDI3LDIsMjdoMjggICBjMC4xMzAyLDAsMC4yNTk4LTAuMDI2NiwwLjM4Mi0wLjA3NzFjMC4yNDQ2LTAuMTAxMywwLjQzOTUtMC4yOTYxLDAuNTQwOC0wLjU0MDhDMzAuOTczNCwyNi4yNTk5LDMxLDI2LjEzMDIsMzEsMjZWNnogTTMsOC4yOTMgICBsNy45Mjk2LDcuMzYzM0wzLDIzLjU4NTlWOC4yOTN6IE0xNiwxNy42MzU2TDQuNTQ2Myw3aDIyLjkwNzNMMTYsMTcuNjM1NnogTTEyLjM5NjEsMTcuMDE4bDIuOTIzMywyLjcxNDQgICBjMC4wNTczLDAuMDUzMSwwLjEyNiwwLjA4MjEsMC4xOTEsMC4xMTk0YzAuMDM5NCwwLjAyMjYsMC4wNzMxLDAuMDU0OSwwLjExNDcsMC4wNzE3QzE1Ljc0NTUsMTkuOTcyNSwxNS44NzIzLDIwLDE2LDIwICAgczAuMjU0NS0wLjAyNzUsMC4zNzUtMC4wNzY1YzAuMDQxNi0wLjAxNjgsMC4wNzUzLTAuMDQ5MSwwLjExNDctMC4wNzE3YzAuMDY1LTAuMDM3MywwLjEzMzctMC4wNjYzLDAuMTkxLTAuMTE5NGwyLjkyMzMtMi43MTQ0ICAgTDI3LjU4NTksMjVINC40MTQxTDEyLjM5NjEsMTcuMDE4eiBNMjEuMDcwNCwxNS42NTYzTDI5LDguMjkzdjE1LjI5MjlMMjEuMDcwNCwxNS42NTYzeiI+PC9wYXRoPjwvZz48L3N2Zz4=');
+  color: #fff;
+  width: 100%;
+  max-width: 200px;
+  transition: max-width .3s .07s, background-position .3s .07s;
+  overflow: hidden;
+  animation: shrinkTip .5s 5s forwards;
+  will-change: max-width, background-position;
+  cursor: pointer;
+  
+  &::after {
+    content: 'Entre em contato';
+    display: inline-block;
+    text-align: right;
+    transition: transform .3s;
+    will-change: transform;
+    animation: hideText .5s 5s forwards;
+  }
+}
+
+@media (min-width: $screen-md) {
+  h1, .h1 {
+    font-size: 70px;
+  }
+  
+  h2, .h2 {
+    font-size: 40px;
+  }
+  
+  h3, .h3 {
+    font-size: 24px;
+  }
+  
+  h6, .h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@keyframes hideText {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes shrinkTip {
+  from {
+    max-width: 200px;
+    background-position: 15px center;
+  } to {
+    max-width: 50px;
+    background-position: 10px center;
+  }
+}

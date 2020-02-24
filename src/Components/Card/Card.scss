@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+
+.card {
+  background-image: linear-gradient(to bottom, $primary-color, $primary-color 78px, #fff 79px, #fff);
+  box-shadow: 0 3px 6px #00000029;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px 40px;
+  position: relative;
+  z-index: 5;
+
+  .card-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    object-fit: none;
+  }
+
+  h4 {
+    margin: 20px 0 10px;
+  }
+
+  p {
+    max-width: 320px;
+    text-align: center;
+    line-height: 23px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    padding: 20px;
+    
+    h4 {
+      margin-left: 0;
+      margin-right: auto;
+      line-height: 1.5rem;
+    }
+    
+    h4, p {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    h4 {
+      margin-left: auto;
+    }
+  
+    h4, p {
+      text-align: center;
+    }
+  }
+}
+
+

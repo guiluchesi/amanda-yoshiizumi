@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.depoimentos {
+  background-color: $neutral-color;
+  padding: 50px 0;
+
+  @media (min-width: $screen-lg) {
+    padding: 100px 0 50px;
+  }
+}
+
+.depoimentos-nav {
+  text-align: center;
+  margin-top: 85px;
+
+  .carousel__dot {
+    display: inline-block;
+    width: 44px;
+    height: 8px;
+    background-color: #CECECE;
+    filter: none;
+    box-shadow: unset;
+    padding: 0;
+    margin: 0;
+    margin-right: 18px;
+    min-width: unset;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    &.carousel__dot--selected {
+      background-color: $accent-color;
+    }
+  }
+}
