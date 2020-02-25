@@ -2,7 +2,7 @@ import { createElement } from 'react';
 
 import './Button.scss';
 
-export default function Button({tag = 'a', className = '', type, children, ...props}) {
+export default function Button({tag = 'button', className = '', type, children, ...props}) {
   return createElement(
     tag,
     {

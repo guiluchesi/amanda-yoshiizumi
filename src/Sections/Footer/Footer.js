@@ -21,7 +21,6 @@ export default function Footer() {
   const renderSubmitButton = () => {
     const props = {
       type: submitForm,
-      tag: 'button',
       children: 'Enviar'
     }
   
