@@ -77,7 +77,7 @@ export default function Portifolio() {
         }
       </div>
 
-      <Button href="https://www.behance.net/amandayoshiizumi" type="marked">
+      <Button tag="a" href="https://www.behance.net/amandayoshiizumi" type="marked">
         Veja mais no meu Behance
       </Button>
     </Container>

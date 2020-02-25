@@ -6,6 +6,7 @@ export default function Button({tag = 'a', className = '', type, children, ...pr
   return createElement(
     tag,
     {
+      'data-testid': 'button',
       className: `btn ${type === 'marked' ? 'marked' : ''} ${className}`,
       target: '_blank',
       rel: 'noreferrer noopener',
